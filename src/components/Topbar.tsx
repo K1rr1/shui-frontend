@@ -17,7 +17,7 @@ export function Topbar({
         <input
           value={username}
           onChange={(e)=>setUsername(e.target.value)}
-          placeholder="Filtrera på användare (VG)"
+          placeholder="Filtrera på användare "
           className="flex-1 rounded px-3 py-2 text-black"
         />
         <select
