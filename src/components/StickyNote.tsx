@@ -28,7 +28,7 @@ export function StickyNote({
   const [editing, setEditing] = useState(false);
   const [text, setText] = useState(note.text);
 
-  // klassiska post-it-färger
+  // post-it-färger
   const palette = ["#FFF689", "#FFD1DC", "#BFFFE0", "#BFD9FF"];
 
   const seeded = useMemo(() => seedNum(note.id), [note.id]);

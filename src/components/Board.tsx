@@ -18,12 +18,12 @@ export function Board() {
   }
   useEffect(() => {
     refresh();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+ 
   }, []);
 
   return (
     <div className="min-h-dvh flex flex-col">
-      {/* bakgrund: lägg din kork-textur i public/cork.png */}
+     
       <div className="fixed inset-0 -z-20 bg-[url('/cork.jpg')] bg-repeat bg-[length:300px]" />
       <div className="fixed inset-0 -z-10 bg-black/5" />
 
@@ -42,7 +42,7 @@ export function Board() {
             Inga meddelanden ännu.
           </div>
         ) : (
-          // Masonry-liknande layout: 1 kolumn mobil → 4 på XL
+          // Masonry-liknande layout: 1 kolumn mobil → 4 på dator
           <div className="py-4 columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
             {messages.map((m) => (
               <div key={m.id} className="mb-4 break-inside-avoid">
